@@ -1,0 +1,194 @@
+
+:root{
+    --tiwaladeBlue: skyblue;
+    --tiwaladeGreen: #42b72a;
+    --myshadow: 5px 5px 5px rgba(199, 192, 192, 0.3);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+body{
+    width: 100vw;
+    height: 90vh;   /*i changed this*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: dashed red;
+    overflow-x: hidden;
+}
+
+.main-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border: dashed;
+}
+
+.main-wrapper .main-container{
+    width: 25%;
+    height: 80%; /*i changed this*/
+    border: solid 1px grey;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /*i changed this*/
+    align-items: center;
+    border: dashed blue;
+    padding-top: 10px; /*i added this*/
+}
+
+.main-wrapper .main-container .text-images{
+    width: 70px;
+    height: 10%;
+    border: dashed green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-wrapper .main-container .text-images img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.main-wrapper .main-container .my-form{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.main-container .my-form form{
+    width: 90%;
+    height: 70%; /*i changed this*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: #fafafa; this belongs to the input tag not the whole form */
+    gap: 30px;
+    padding: 10px;
+    box-shadow: var(--myshadow);
+    border-radius: 5px;
+}
+
+
+.main-wrapper .main-container .my-form  form input{
+    width: 100%;
+    height: 70px;
+    border: 1px grey solid;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.main-wrapper .main-container .my-form  form button{
+    width: 100%;
+    height: 50px;
+    font-size: 17px;
+    background-color: var(--tiwaladeBlue);
+    color: white;
+    border-radius: 4px;
+    border: 1px grey solid;
+}
+
+.main-wrapper .main-container .my-form .space{
+    width: 85%; /*i changed this*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /*i changed this*/
+    align-items: center;
+}
+
+
+.main-wrapper .main-container .my-form .space hr{
+    width: 35%; /*i changed this*/
+    height: 2px;
+    background-color: grey;
+    opacity: 0.5;
+}
+
+
+
+.main-wrapper .main-container .my-form .Facebook{
+    font-size: 14px;
+    text-decoration: none;
+    border: dashed yellow;
+    width: 60%;
+}
+
+.main-wrapper .main-container .my-form .Facebook img{
+    width: 20px;
+    height: 20px;
+}
+
+.main-wrapper .main-container .my-form .Forgot{
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.main-wrapper .text{
+    /* font-size: 14px; */
+    /*text-decoration: none; style the p inside this .text class then style the a 
+    tag inside the p tag. the text decoration will be appiled to the a tag*/
+
+    width: 25%;
+    height: 70px;
+    border: solid grey 1px;
+}
+
+.main-wrapper .text p{
+
+}
+
+.main-wrapper .text p a{
+    
+}
+
+.main-wrapper .app{
+    width: 25%;
+    height: 70px;
+    border: solid grey 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.main-wrapper .app p{/*stop jumping steps. style the app class before you style the items inside (p and the span carrying img)*/
+    width: 100%; 
+    /*height: 150px;      this height was not necessary*/
+    font-size: 17px;
+    border: dashed;
+    text-align: center;
+}
+
+.main-wrapper .app .play {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    height: 70%;
+    border: dashed;
+}
+
+.main-wrapper .app .play img{ /*stop jumping steps. style the play class before you style the items inside (img)*/
+    width: 40%;
+    height: 100%;
+}
